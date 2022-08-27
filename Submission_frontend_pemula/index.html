@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", 
+            content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>
+            Bookshelf Apps
+        </title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_form.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="text-header">
+                <h1>Bookshelf Apps</h1>
+                <p>Bookshelf Apps merupakan sebuah aplikasi berbasis web yang bisa digunakan untuk mendata
+                    buku apa saja yang belum atau sudah kita baca.
+                </p>
+            </div>
+
+            <nav>
+            <section class="search_section">
+                <h3 style="text-align:left">Cari Buku (Opsional)</h3>
+                <form id="searchBook">
+                    <label for="searchBookTitle"></label>
+                    <input id="searchBookTitle" type="text">
+                    <button id="searchSubmit" type="submit" class="btn-submit" style="color:white">Cari</button>
+                </form>
+            </section>
+            </nav>
+        </header>
+
+        <main>
+            <aside>
+                <section class="input_section">
+                    <h3>Masukkan Buku Baru</h3>
+                    <br>
+                    <form id="inputBook">
+                        <div class="input">
+                            <label for="inputBookTitle">Judul</label> <br>
+                            <input id="inputBookTitle" type="text" required>
+                        </div>
+                        <div class="input">
+                            <label for="inputBookAuthor">Penulis</label> <br>
+                            <input id="inputBookAuthor" type="text" required>
+                        </div>
+                        <div class="input">
+                            <label for="inputBookYear">Tahun</label> <br>
+                            <input id="inputBookYear" type="number" required>
+                        </div>
+                        <br>
+                        <div class="input_inline">
+                            <label for="inputBookIsComplete">Selesai dibaca</label>
+                            <input id="inputBookIsComplete" type="checkbox">
+                        </div>
+                        <button id="bookSubmit" type="submit" class="btn-submit">Masukkan Buku ke rak 
+                                    <span>Belum selesai dibaca</span>
+                        </button>
+                    </form>
+                </section>
+            </aside>
+
+            <div id="content">
+                <section class="book_shelf">
+                 <h3>Belum selesai dibaca</h3>
+                 <div id="uncompletedBookshelfList" class="book_list">
+ 
+                 </div>
+                </section>
+                <section class="book_shelf">
+                 <h3>Sudah selesai dibaca</h3>
+                 <div id="completeBookshelfList" class="book_list">
+ 
+                 </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p>Ini Daftar Buku &#169; 2022, ITS</p>
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>

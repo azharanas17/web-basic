@@ -1,0 +1,229 @@
+input[type=text], input[type=number] {
+    font-family: Raleway, sans-serif;
+    background: #F5F1FF;
+    border: 2px solid #9475EA;
+    border-radius: 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+
+.input_section {
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.input_section > h3 {
+    text-align: center;
+    color: rgb(35, 77, 156);
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    background-color: rgb(35, 77, 156);
+    color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: grab;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+
+.input_section > form > .input > label {
+    color:rgb(35, 77, 156);
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    /* display: flex; */
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color:rgb(35, 77, 156);
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search_section {
+    margin: 6px 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 6px;
+    border: 0px solid black;
+    border-radius: 10px;
+}
+
+.search_section > h3 {
+    padding-left: 1.7%;
+    color:rgb(69, 114, 75)
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 2.5fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search_section > form > button {
+    background-color:rgb(35, 77, 156);
+    color: rgb(80, 58, 58);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.book_shelf > h3 {
+    color:rgb(35, 77, 156);
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf > .book_list > .book_item > .action > .green {
+    background-color: darkgreen;
+    color: white;
+}
+
+.book_shelf > .book_list > .book_item > .action > .red {
+    background-color: darkred;
+    color: white;
+}
+
+.y-button {
+    width: fit-content;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    border-radius: 16px;
+    padding: 5px 7px;
+    border: 2px solid #5e5353;
+    color: black;
+    font-size: 11px;
+    margin-top: auto;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.y-button:hover {
+    background: #a6e70e;
+    background-size: contain;
+}
+
+.x-button {
+    width: fit-content;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    border-radius: 16px;
+    padding: 5px 7px;
+    border: 2px solid #e23030;
+    color: black;
+    font-size: 11px;
+    margin-top: auto;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.x-button:hover {
+    background-color: #e23030;
+    background-size: contain;
+}
+
+.undo-button {
+    width: fit-content;
+    font-family: Raleway, sans-serif;
+    font-weight: bold;
+    border-radius: 16px;
+    padding: 5px 7px;
+    border: 2px solid #5e5353;
+    color: black;
+    font-size: 11px;
+    margin-top: auto;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.undo-button:hover {
+    background:  #5F30E2;
+    background-size: contain;
+}
+
+.y-button:focus, .x-button {
+    outline: none;
+}
+
+/* .btn-submit {
+    width: fit-content;
+    font-family: Raleway, sans-serif;
+    border-radius: 16px;
+    padding: 12px 24px;
+    border: 2px solid #5F30E2;
+    color: black;
+    font-size: 24px;
+    margin-top: auto;
+    align-self: flex-end;
+    cursor: pointer;
+} */
+
+.btn-submit:hover {
+    background: #5F30E2;
+    color: white;
+}
